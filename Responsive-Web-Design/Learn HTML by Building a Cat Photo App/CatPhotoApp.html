@@ -1,1 +1,86 @@
-Hola
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CatPhotoApp</title>
+</head>
+
+<body>
+  <main>
+    <h1>CatPhotoApp</h1>
+    <section>
+      <h2>Cat Photos</h2>
+      <!--TODO: Add link to cat photos-->
+      <p>See more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery.</p>
+      <!--se conoce como etiqueta de autocierre (self-closing tag)-->
+      <a href="https://freecatphotoapp.com"><img
+          src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+          alt="A cute orange cat lying on its back"></a>
+    </section>
+    <section>
+      <h2>Cat Lists</h2>
+      <h3>Things cats love:</h3>
+      <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+      </ul>
+      <!--El elemento figure representa contenido independiente y te permitirá asociar una imagen a una descripción.-->
+      <figure>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+          alt="A slice of lasagna on a plate.">
+        <!--Un elemento (figcaption), se utiliza para añadir una descripción o leyenda para describir una imagen anidada en un elemento figure.-->
+        <figcaption>Cats <em>love</em> lasagna</figcaption>
+      </figure>
+      <h3>Top 3 things cats hate:</h3>
+      <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+      </ol>
+      <figure>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+          alt="Five cats looking around a field.">
+        <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+      </figure>
+    </section>
+    <section>
+      <h2>Cat Form</h2>
+      <!--El atributo action indica, dónde deben enviarse los datos del formulario. Por ejemplo, <form action="/submit-url"></form> le dice al navegador que los datos del formulario deben ser enviados a la ruta /submit-url.-->
+      <form action="https://freecatphotoapp.com/submit-cat-photo">
+        <fieldset>
+          <!--El elemento legend actúa como una leyenda/descripción, para el contenido del elemento fieldset. Le da a los usuarios un contexto sobre lo que deben ingresar en esa parte del formulario.-->
+          <legend>Is your cat an indoor or outdoor cat?</legend>
+          <!--Puedes usar botones de radio (radio button) para preguntas en las que quieres que el usuario solo te dé una respuesta a partir de múltiples opciones.-->
+          <!--Los elementos label se utilizan para ayudar a asociar el texto a un elemento input con el propio elemento input (especialmente para las tecnologías de asistencia como los lectores de pantalla). -->
+          <!--El atributo id se utiliza para identificar elementos HTML específicos. Cada atributo id debe tener un valor único, diferente a los demás valores id de la página.-->
+          <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor"> Indoor</label>
+          <!--Para hacer que al seleccionar un radio button, el otro sé deseleccione automáticamente, ambos botones deben tener un atributo name con el mismo valor.-->
+          <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          <!--El elemento fieldset se utiliza para agrupar elementos input y label relacionados dentro de un formulario web. Los elementos fieldset son elementos de nivel de bloque, lo que significa que aparecen en una nueva línea.-->
+        </fieldset>
+        <fieldset>
+          <legend>What's your cat's personality?</legend>
+          <!--Hay otra manera de asociar un texto con el elemento input. Puedes anidar un texto dentro de un elemento label y añadirle un atributo for con el mismo valor del atributo id del elemento input. <input id="loving" type="checkbox"> <label for="loving">Loving</label>-->
+          <input type="checkbox" id="loving" name="personality" value="loving" checked> Loving
+          <input type="checkbox" id="lazy" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+          <input type="checkbox" id="energetic" name="personality" value="energetic"> <label
+            for="energetic">Energetic</label>
+        </fieldset>
+        <!--El elemento input te permite recolectar datos desde un formulario web de diferentes formas.-->
+        <!--Para que los datos de un formulario puedan acceder al destino especificado en el atributo action, debes darle al campo de texto un atributo name y darle un valor que represente a los datos que están siendo enviados.-->
+        <!--Un texto provisional (placeholder) nos da una idea de que tipo de información debemos escribir en un elemento input.-->
+        <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+        <!--input y button son elementos inline, los cuales no aparecen en una nueva línea.-->
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+  </footer>
+</body>
+
+</html>
