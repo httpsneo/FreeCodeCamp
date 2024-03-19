@@ -5,7 +5,7 @@ body {
   /*background-color: burlywood;*/
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
   font-family: sans-serif;
-  padding: 20px;
+  padding: 50px;
 }
 h1, h2 {
   /* Despues de la coma va el font de respaldo*/
