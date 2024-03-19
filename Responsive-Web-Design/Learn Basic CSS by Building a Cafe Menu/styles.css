@@ -1,5 +1,87 @@
-h1,
-h2,
-p {
+h1, h2, p {
   text-align: center;
+}
+body {
+  /*background-color: burlywood;*/
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
+  padding: 20px;
+}
+h1, h2 {
+  /* Despues de la coma va el font de respaldo*/
+  font-family: Impact, serif;
+}
+h1 {
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+h2 {
+  font-size: 30px;
+}
+.established {
+  font-style: italic;
+}
+/*Para seleccionar un ID se usa el simbolo #*/
+#menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+img {
+  display: block;
+  margin-top: -25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+/*Para seleccionar una clase se usa el simbolo .*/
+.flavor,
+.dessert {
+  text-align: left;
+  width: 75%;
+}
+.price {
+  text-align: right;
+  width: 25%;
+}
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.bottom-line {
+  margin-top: 25px;
+}
+
+/*FOOTER*/
+
+footer {
+  font-size: 14;
+}
+.address {
+  margin-bottom: 5px;
+}
+a {
+  color: black;
+}
+/*Para cambiar las propiedades de un enlace cuando el enlace ya ha sido visitado utilizas un pseudo-selector, el cual luce así a:visited { propertyName: propertyValue; }.*/
+a:visited {
+  color: black;
+}
+/*Puedes cambiar las propiedades de un enlace cuando el ratón pasa sobre él utilizando un pseudo-selector, que luce así a:hover { propertyName: propertyValue; }.*/
+a:hover {
+  color: brown;
+}
+/*Para cambiar las propiedades de un enlace, cuando el enlace está siendo presionado, utilizas un pseudo-selector, el cual luce así a:active { propertyName: propertyValue; }.*/
+a:active {
+  color: brown;
 }
