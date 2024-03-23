@@ -1,0 +1,39 @@
+h1 {
+  text-align: center;
+  background-color: rgb(0, 255, 255);
+}
+.marker {
+  height: 25px;
+  width: 200px;
+  margin: 10px auto;
+}
+.red {
+    background: linear-gradient( rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
+}
+.green {
+    background: linear-gradient( #55680D, #71F53E, #116C31);
+}
+.blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+}
+/*Hay dos modelos principales de colores: el modelo aditivo RGB (rojo, verde, azul) utilizado en dispositivos electrónicos, y el modelo sustractivo CMYK (cian, magenta, amarillo, negro) utilizado para impresión.*/
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+}
+.sleeve{
+    background-color: rgba(255, 255, 255, 50%);
+    width: 110px;
+    height: 25px;
+    opacity: 0.5;
+    border-left-width: 10px;
+    /*Los bordes tienen varios estilos para elegir. Puede ser una línea continua (solid) o discontinua (dashed), o incluso una línea punteada (dotted) si lo prefieres. Lo normal es que sean líneas continuas.*/
+    border-left-style: solid;
+}
+.cap {
+    width: 60px;
+    height: 25px;
+}
+.sleeve, .cap {
+    display: inline-block;
+}
